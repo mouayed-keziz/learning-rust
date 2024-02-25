@@ -1,14 +1,38 @@
-use ferris_says::say;
-use std::io::{stdout, BufWriter};
+use rand::Rng;
+use std::io;
+fn main() {
+    println!("--- Guessing game ---");
+    let secret_number = rand::thread_rng().gen_range(1..101);
 
-fn ferris_say(message: &str) {
-    let stdout = stdout();
-    let width = message.chars().count();
+    let mut number: i32 = 0;
+    read_number(&mut number);
+    let mut i = 0;
+    loop {
+        i += 1;
+        if number == secret_number {
+            println!("You guessed the secret number, its {}", secret_number);
+            break;
+        }
+        if number < secret_number {
+            println!("The secret number is greater than {}", number);
+            read_number(&mut number)
+        } else {
+            println!("The secret number is lower than {}", number);
+            read_number(&mut number)
+        }
+    }
 
-    let mut writer = BufWriter::new(stdout.lock());
-    say(&message, width, &mut writer).unwrap();
+    println!(
+        "The secret number is: {}, number of tries {}",
+        secret_number, i
+    );
 }
 
-fn main() {
-    ferris_say("Hello world, this is Ferris speaking!")
+fn read_number(number: &mut i32) {
+    println!("Guess the secret number");
+    let mut guess = String::new();
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read number");
+    *number = guess.trim().parse().expect("Please enter a valid number");
 }
