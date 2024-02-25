@@ -2,7 +2,9 @@
 
 `source : The rust-lang's installation guild`
 
-this projects uses a crate (package) called ferris-says to display this message
+this projects uses a crate (package) called ferris-says that displays "ferris" in ASCII with a bubble saying whatever your input is
+
+### output
 
 ```
 _______________________________________
