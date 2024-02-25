@@ -1,19 +1,12 @@
-# Hello world with crate
+# Greeting
 
-`source : The rust-lang's installation guild`
+this project tells teh user to enter his name, then greets the user
 
-this projects uses a crate (package) called ferris-says that displays "ferris" in ASCII with a bubble saying whatever your input is
-
-### output
+### output (-> for user input)
 
 ```
-_______________________________________
-< Hello world, this is Ferris speaking! >
----------------------------------------
-       \
-        \
-           _~^~^~_
-       \) /  o o  \ (/
-         '_   -   _'
-         / '-----' \
+--- name and greating ---
+Please enter your name :
+-> mouayed
+Hello, mouayed!
 ```
