@@ -2,6 +2,8 @@
 
 this is a small rust project that displays the multiplication table (from 1 to 12)
 
+### output
+
 ```
 -----------------
 1 x 1 = 1
