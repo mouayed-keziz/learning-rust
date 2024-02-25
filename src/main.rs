@@ -1,14 +1,24 @@
+use std::io;
+
 fn main() {
-    let n = 12;
-    println!("-----------------");
-    for i in 1..n + 1 {
-        print_multiplication_table(i, n);
-        println!("-----------------");
-    }
+    println!("--- sum to n ---");
+    println!("Please enter a number :");
+    let mut n = String::new();
+    io::stdin()
+        .read_line(&mut n)
+        .expect("Failed to read number");
+
+    let number: i32 = n.trim().parse().expect("Please enter a number");
+
+    let sum = sum_to_n(number);
+
+    println!("the sum of numbers from 0 to {} is : {}", number, sum);
 }
 
-fn print_multiplication_table(i: i32, n: i32) {
-    for j in 1..n + 1 {
-        println!("{} x {} = {}", i, j, i * j);
+fn sum_to_n(n: i32) -> i32 {
+    let mut sum = 0;
+    for i in 0..n {
+        sum = sum + i;
     }
+    sum
 }

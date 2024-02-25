@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "multiplication-table"
+name = "sum-1-to-n"
 version = "0.1.0"
