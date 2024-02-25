@@ -1,5 +1,5 @@
 [package]
-name = "sum-1-to-n"
+name = "conditional-sum-1-to-n"
 version = "0.1.0"
 edition = "2021"
 

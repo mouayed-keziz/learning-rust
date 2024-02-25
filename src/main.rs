@@ -18,7 +18,9 @@ fn main() {
 fn sum_to_n(n: i32) -> i32 {
     let mut sum = 0;
     for i in 0..n {
-        sum = sum + i;
+        if i % 3 == 0 || i % 5 == 0 {
+            sum = sum + i;
+        }
     }
     sum
 }
