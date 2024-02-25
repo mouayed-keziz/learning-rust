@@ -1,4 +1,4 @@
 # Learning Rust
 
-this project contain small projects im building while learning rust
-for the code, check this project's branches.
+this repository contains small projects im building while learning rust-lang
+if you'r looking for the source code for these projects, check the repository's branches
