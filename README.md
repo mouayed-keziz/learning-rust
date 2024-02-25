@@ -1,4 +1,4 @@
-# Sum 1..n, (only multiples of 2 or 5 are considered)
+# Sum 1..n, (only multiples of 3 or 5 are considered)
 
 this program asks the user for a number "n" and prints the sum of the numbers 1 to n, only multiples of three or five are considered
 
