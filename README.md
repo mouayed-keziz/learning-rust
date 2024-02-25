@@ -1,4 +1,15 @@
-# Learning Rust
+# Hello world with crate
 
-this project contain small projects im building while learning rust
-for the code, check this project's branches.
+this projects uses a crate (package) called ferris-says to display this message
+
+```
+_______________________________________
+< Hello world, this is Ferris speaking! >
+---------------------------------------
+       \
+        \
+           _~^~^~_
+       \) /  o o  \ (/
+         '_   -   _'
+         / '-----' \
+```
